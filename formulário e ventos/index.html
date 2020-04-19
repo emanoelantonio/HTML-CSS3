@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="funcao.js"></script>
+    <link rel="icon" href="#">
+    <title>formulario e ventos</title>
+</head>
+<body style="padding-left: 100px">
+    <h3>Comprar</h3>
+        <form id="form2" name="compra" onsubmit="finalizarCompra(event)">
+            <select name="prod" id="mySelect" size="5" multiple='multiple'>
+                <option>NOTEBOOK</option>
+                <option>SMARTPHONE</option>
+                <option>SMARTTV</option>
+                <option>TABLET</option>
+                <option>DESKTOP</option>
+            </select>
+            <br>
+            <h3>Selecione a forma de pagamento:</h3>
+            <br><input type="radio" name="pag" value="Débito">Débito
+            <br><input type="radio" name="pag" value="Débito">Crédito
+            <br><input type="radio" name="pag" value="Débito">Boleto
+
+            <h3>Itens Extra:</h3>
+            <br><Input type="checkbox" name="itens" value="Garantia Extendida">Garantia Extendida
+            <br><Input type="checkbox" name="itens" value="Nota Online">Nota Online
+            <br><Input type="checkbox" name="itens" value="Entrega Rápida">Entrega Rápida
+            <br>
+
+            <h3>Pedido especial:</h3>
+            <textarea id="texto" cols="25" rows="5"></textarea>
+            <br>Quantidade:<input name="qtd" type="number" min="1" max="10" value="1">
+            <br><input type="submit" value="Comprar" id="sub">
+
+
+        </form>
+        <div id="info"></div>
+
+</body>
+</html>
