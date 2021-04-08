@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Light | Dark - Mode</title>
+</head>
+<body>
+    <header>
+        <label id="dark-change"></label>
+    </header>
+    <main>
+        <h1>Simples Light | Dark mode</h1>
+        <div id="respon">
+            <img src="night-sky-purple.jpg" alt="Céu a noite em tom de roxo.">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus blanditiis asperiores molestiae, a quaerat placeat laboriosam nemo nam totam eveniet. Blanditiis a nesciunt cumque officia dignissimos, repellendus minus alias cum.</p>
+        </div>
+    </main>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        
+        darkMode.addEventListener('click', function() {
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+</html>
